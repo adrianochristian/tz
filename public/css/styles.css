@@ -27,7 +27,7 @@
 }
 
 .dark-mode .brand a {
-    color: #fff;
+    color: #007bff;
 }
 
 .dark-mode .welcome-message p {
@@ -40,8 +40,18 @@
 
 .dark-mode .login-form input {
     background-color: #333;
+    color: #ddd;
+    border-color: #ddd;
+}
+
+.dark-mode .login-form input:hover {
+    border-color: #007bff;
     color: #fff;
-    border-color: #fff;
+}
+
+.dark-mode .login-form input:focus {
+    border-color: #007bff;
+    color: #fff;
 }
 
 .dark-mode .checkbox input[type="checkbox"] {
@@ -63,8 +73,13 @@
     color: #fff;
 }
 
+.dark-mode .social:hover {
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
 .dark-mode .forgot-password a {
-    color: #fff;
+    color: #007bff;
 }
 
 .dark-mode .dot {
@@ -76,7 +91,7 @@
 }
 
 .dark-mode .cursos span {
-    background-color: #999;
+    background-color: #007bff;
     color: #fff;
 }
 
@@ -239,6 +254,11 @@ body, html {
     border-radius: 5px;
 }
 
+.icon-input {
+    position: absolute;
+    padding-left: 30px;
+}
+
 .checkbox {
     display: flex;
     align-items: center;
@@ -283,6 +303,10 @@ input[type="checkbox"]:checked::after {
     cursor: pointer;
     border-radius: 5px;
     width: 100%;
+}
+
+.login {
+    color: #fff;
 }
 
 .social:hover {

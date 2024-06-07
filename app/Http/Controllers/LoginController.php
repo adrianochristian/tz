@@ -16,4 +16,8 @@ class LoginController extends Controller
             return response()->json(['message' => 'Invalid credentials'], 401);
         }
     }
+
+    public function home(){
+        return view('welcome');
+    }
 }

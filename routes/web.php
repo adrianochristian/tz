@@ -3,8 +3,6 @@
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [LoginController::class, 'home'])->name('home');
 
 Route::post('/login', [LoginController::class, 'login'])->name('login');

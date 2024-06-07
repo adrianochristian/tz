@@ -18,6 +18,7 @@
         element.classList.toggle("dark-mode");
     }
 </script>
+
 <body>
     <div class="container">
         <div class="left-side">
@@ -101,7 +102,7 @@
                 </form>
             </div>
             <div class="forgot-password">
-                <a href="#">Esqueceu sua senha? Recuperar senha</a>
+                Esqueceu sua senha? <a href="#">Recuperar senha</a>
             </div>
         </div>
     </div>
