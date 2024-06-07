@@ -6,7 +6,13 @@ use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
-    public function login(Request $request)
+    /**
+     * Mock Auth simulating a login api response.
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function login(Request $request): \Illuminate\Http\JsonResponse
     {
         $credentials = $request->only('username', 'password');
         
@@ -16,6 +22,7 @@ class LoginController extends Controller
             return response()->json(['message' => 'Invalid credentials'], 401);
         }
     }
+
 
     public function home(){
         return view('welcome');
